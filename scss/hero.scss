@@ -1,16 +1,46 @@
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-.hero picture,
-.hero img {
+.hero__picture,
+.hero__image {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero__title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero__line {
+    display: block;
+}
+
+.hero__button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.hero__button:hover {
+    background-color: #555;
 }

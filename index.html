@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="#link1">Link 1</a>
+    <nav class="nav">
+      <a href="#link1" class="nav__link">Link 1</a>
 
-      <a href="#link2">Link 2</a>
-      <div class="logo">Logo</div>
+      <a href="#link2" class="nav__link">Link 2</a>
+      <div class="nav__logo">Logo</div>
     </nav>
 
     <section class="hero">
-      <picture>
+      <picture class="hero__picture">
         <source
           srcset="images/main-img-mobile.jpg"
           media="(max-width: 600px)"
@@ -25,8 +25,17 @@
           media="(min-width: 601px) and (max-width: 1024px)"
         />
         <source srcset="images/main-img.jpg" media="(min-width: 1025px)" />
-        <img src="images/main-img.jpg" alt="Hero Image" />
+        <img src="images/main-img.jpg" alt="Hero Image" class="hero__image" />
       </picture>
+
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__line hero__line--1">New Year,</span>
+          <span class="hero__line hero__line--2">New “You”</span>
+          <span class="hero__line hero__line--3">with [product name]</span>
+        </h1>
+        <button class="hero__button">Try [product name]</button>
+      </div>
     </section>
   </body>
 </html>

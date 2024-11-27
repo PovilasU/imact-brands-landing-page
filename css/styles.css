@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,14 +13,14 @@ nav {
   box-sizing: border-box; /* Include padding in the element's total width */
 }
 
-nav .logo {
+.nav__logo {
   flex-grow: 1;
   text-align: center;
   color: white;
   font-size: 1.5rem;
 }
 
-nav a {
+.nav__link {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -28,34 +28,64 @@ nav a {
 
 /* Mobile styles */
 @media (max-width: 600px) {
-  nav {
+  .nav {
     flex-direction: column;
     width: 100vw; /* Ensure the nav takes the full viewport width */
   }
-  nav .logo {
+  .nav__logo {
     margin-bottom: 1rem;
   }
-  nav a {
+  .nav__link {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
   }
 }
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-.hero picture,
-.hero img {
+.hero__picture,
+.hero__image {
   width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero__line {
+  display: block;
+}
+
+.hero__button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: #555;
 }
 
 /* Mobile styles */
