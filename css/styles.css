@@ -88,6 +88,29 @@ body {
   background-color: #555;
 }
 
+.benefits {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  padding: 20px;
+}
+
+.benefits__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px; /* Optional: limit the maximum width */
+  padding: 20px; /* Add padding to the container */
+  border: 1px solid #000; /* Add border to the container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.benefit {
+  padding: 20px; /* Start with padding */
+  border-radius: 15px; /* Add rounded borders */
+  border: 1px solid #000;
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
   body {
