@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default HTML Page</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#link1">Link 1</a>
+
+      <a href="#link2">Link 2</a>
+      <div class="logo">Logo</div>
+    </nav>
+
+    <section class="hero">
+      <picture>
+        <source
+          srcset="images/main-img-mobile.jpg"
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="images/tablet-main-img.jpg"
+          media="(min-width: 601px) and (max-width: 1024px)"
+        />
+        <source srcset="images/main-img.jpg" media="(min-width: 1025px)" />
+        <img src="images/main-img.jpg" alt="Hero Image" />
+      </picture>
+    </section>
+  </body>
+</html>

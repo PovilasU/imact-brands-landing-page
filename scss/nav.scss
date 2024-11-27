@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+nav .logo {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        width: 100vw; /* Ensure the nav takes the full viewport width */
+    }
+
+    nav .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
