@@ -175,11 +175,113 @@ body {
   font-size: 1rem;
 }
 
+.certificate {
+  background-color: #F5F5F5;
+  color: #000;
+  padding: 40px 20px;
+  text-align: center;
+}
+.certificate__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.certificate__icon {
+  width: 100px;
+  height: 100px;
+}
+.certificate__text {
+  font-size: 1rem;
+}
+@media (min-width: 601px) {
+  .certificate__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .certificate__icon {
+    margin-right: 20px;
+  }
+  .certificate__text {
+    text-align: left;
+  }
+}
+
+.product {
+  padding: 40px 20px;
+  text-align: center;
+}
+.product__header {
+  font-size: 50px;
+  color: #000;
+}
+.product__name {
+  color: #C2110E;
+}
+.product__bend {
+  color: #000;
+}
+.product__subheader {
+  font-size: 22px;
+  margin-top: 20px;
+}
+.product__description {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.product__ingredients-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.product__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product__slider__button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.product__slider__slides {
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+}
+.product__slider__slide {
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.product__slider__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.product__slider__dots__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.product__button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
   nav {
     flex-direction: column;
   }
@@ -188,16 +290,6 @@ body {
   }
 }
 /* Tablet styles */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body {
-    background-color: lightgreen;
-  }
-}
 /* Desktop styles */
-@media (min-width: 1025px) {
-  body {
-    background-color: lightcoral;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */
