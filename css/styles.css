@@ -211,6 +211,7 @@ body {
 .product {
   padding: 40px 20px;
   text-align: center;
+  background-color: #F9E8E7;
 }
 .product__header {
   font-size: 50px;
