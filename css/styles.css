@@ -236,39 +236,25 @@ body {
   margin-top: 20px;
 }
 .product__slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
+  position: relative;
 }
-.product__slider__button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-.product__slider__slides {
-  display: flex;
-  overflow: hidden;
-  width: 300px;
-}
-.product__slider__slide {
-  min-width: 300px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.product__slider__dots {
+.product__slider .swiper-slide {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
 }
-.product__slider__dots__dot {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+.product__slider .slider__image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+.product__slider .swiper-button-next,
+.product__slider .swiper-button-prev {
+  color: #000;
+}
+.product__slider .swiper-pagination-bullet {
+  background: #000;
 }
 .product__button {
   background-color: #000;

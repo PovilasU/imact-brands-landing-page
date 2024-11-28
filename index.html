@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Default HTML Page</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav class="nav">
@@ -181,6 +186,7 @@
       </div>
     </section>
 
+    <!-- slider -->
     <section class="product">
       <h1 class="product__header">
         <span class="product__name">[product name]</span>
@@ -193,21 +199,54 @@
         done.
       </p>
       <p class="product__ingredients-header">Main Organic Ingredients:</p>
-      <div class="product__slider">
-        <button class="slider__button slider__button--prev">&lt;</button>
-        <div class="slider__slides">
-          <div class="slider__slide">Slide 1</div>
-          <div class="slider__slide">Slide 2</div>
-          <div class="slider__slide">Slide 3</div>
+      <div class="swiper-container product__slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img
+              src="images/slider/prod1.JPG"
+              alt="Product 1"
+              class="slider__image"
+            />
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <img
+              src="images/slider/prod2.JPG"
+              alt="Product 2"
+              class="slider__image"
+            />
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <img
+              src="images/slider/prod3.JPG"
+              alt="Product 3"
+              class="slider__image"
+            />
+          </div>
         </div>
-        <button class="slider__button slider__button--next">&gt;</button>
-      </div>
-      <div class="slider__dots">
-        <span class="slider__dot"></span>
-        <span class="slider__dot"></span>
-        <span class="slider__dot"></span>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
       <button class="product__button">Add to Cart</button>
     </section>
+
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true, // Enables infinite looping of slides
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // Pagination dots are clickable
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

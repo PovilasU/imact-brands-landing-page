@@ -1,84 +1,69 @@
 .product {
-    padding: 40px 20px;
-    text-align: center;
-  
-    &__header {
-      font-size: 50px;
-      color: #000;
-    }
-  
-    &__name {
-      color: #C2110E;
-    }
-  
-    &__bend {
-      color: #000;
-    }
-  
-    &__subheader {
-      font-size: 22px;
-      margin-top: 20px;
-    }
-  
-    &__description {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-  
-    &__ingredients-header {
-      font-size: 20px;
-      font-weight: 600;
-      margin-top: 20px;
-    }
-  
-    &__slider {
+  padding: 40px 20px;
+  text-align: center;
+
+  &__header {
+    font-size: 50px;
+    color: #000;
+  }
+
+  &__name {
+    color: #C2110E;
+  }
+
+  &__bend {
+    color: #000;
+  }
+
+  &__subheader {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  &__ingredients-header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  &__slider {
+    margin-top: 20px;
+    position: relative;
+
+    .swiper-slide {
       display: flex;
-      align-items: center;
       justify-content: center;
-      margin-top: 20px;
-  
-      &__button {
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-      }
-  
-      &__slides {
-        display: flex;
-        overflow: hidden;
-        width: 300px;
-      }
-  
-      &__slide {
-        min-width: 300px;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-  
-      &__dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-  
-        &__dot {
-          width: 10px;
-          height: 10px;
-          background-color: #000;
-          border-radius: 50%;
-          margin: 0 5px;
-          cursor: pointer;
-        }
-      }
+      align-items: center;
     }
-  
-    &__button {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 16px;
-      margin-top: 20px;
-      border: none;
-      cursor: pointer;
+
+    .slider__image {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+    }
+
+    .swiper-pagination-bullet {
+      background: #000;
     }
   }
+
+  &__button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+}
